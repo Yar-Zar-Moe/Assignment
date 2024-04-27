@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/360_F_240233816_oyv1UpkKCN5Z2baeCLcDt8TY2tssXjbC.jpg"></head>
 </head>
 <body>
   <!-- start of nav-bar -->
@@ -39,13 +40,20 @@
   <!-- end of nav-bar -->
 
       <div class="container">
-        <div style="width: 100%;overflow: hidden;">
-          <div class="carousel">
-            <img src="img/image1.jpg" alt="">
-            <img src="img/image2.jpg" alt="">
-            <img src="img/image3.jpg" alt="">
+          <div id="video_container">
+                <!-- Video Background -->
+                <video autoplay muted loop id="video-background">
+                  <source src="video/y2mate.com - 6 Sec Standing Desk commercial_1080p.mp4" type="video/mp4">
+                  <!-- Add other video formats if needed -->
+                  Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional: Overlay content -->
+                <div class="content">
+                  <h1>Your Content Goes Here</h1>
+                  <p>This is overlay content on top of the video background.</p>
+                </div>
           </div>
-      </div>
       </div>
 
 </body>
