@@ -7,6 +7,7 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 	user-select: none;
+	background-color: #282A29;
 }
 
 #menu {
@@ -46,7 +47,7 @@ body{
 	line-height: 45px;
 	padding: 0 14px;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #ffffffe7;
 	font-size: 16px;
 }
 #menu a.dropdown-arrow:after {
@@ -95,7 +96,7 @@ body{
 	width: 100%;
 }
 #menu ul.sub-menus a {
-	color: #FFFFFF;
+	color: #ffffffe7;
 	font-size: 16px;
 }
 #menu li:hover ul.sub-menus {
@@ -107,24 +108,22 @@ body{
 	opacity: 0.98;
 	border: 1px solid #282A29;
 }
-
 #video_container{
 	width: 100%;
 	height: 100vh;
 }
 #video-background {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 110vh;
 	object-fit: cover;
-	z-index: -1; /* Ensure it's behind other content */
+	z-index: -1;
 }
 
-/* Optional: Overlay text */
 .content {
 	position: absolute;
 	top: 50%;
@@ -132,6 +131,87 @@ body{
 	transform: translate(-50%, -50%);
 	color: white;
 	text-align: center;
+}
+.learn_more_btn {
+	background-color: transparent;
+	border: 1.5px solid #ffffff;
+	border-radius: 22px;
+	color: #ffffff;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	outline: none;
+  }
+  .learn_more_btn:hover {
+	background-color: #ffffffd5;
+	color: #000000;
+  }
+
+.special_offers_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	flex-wrap: wrap;
+	margin: 5vh;
+}
+
+.offer {
+    flex-basis: 30%;
+    text-align: center;
+	background-color: #ffffff;
+	box-shadow: #595c5a9d 0px 5px 15px;
+}
+
+.offer img {
+    width: 100%;
+    height: auto;
+}
+
+.offer h2 {
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_media {
+    list-style: none;
+    padding: 0;
+}
+
+.social_media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social_media li a{
+	color: #ffffff;
+}
+
+.social_media li:last-child {
+    margin-right: 0;
+}
+
+.social_media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+footer p {
+    font-size: 14px;
 }
 @media screen and (max-width: 1100px){
 	#menu {
