@@ -8,6 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 	user-select: none;
 	background-color: #282A29;
+	overflow-x: hidden;
 }
 
 #menu {
@@ -110,7 +111,7 @@ body{
 }
 #video_container{
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 }
 #video-background {
 	position: absolute;
@@ -119,7 +120,7 @@ body{
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 110vh;
+	height: 100vh;
 	object-fit: cover;
 	z-index: -1;
 }
@@ -149,11 +150,10 @@ body{
   }
 
 .special_offers_container {
+	width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-	flex-wrap: wrap;
-	margin: 5vh;
+    flex-wrap: wrap;
+	margin: 20px;
 }
 
 .offer {
@@ -161,6 +161,7 @@ body{
     text-align: center;
 	background-color: #ffffff;
 	box-shadow: #595c5a9d 0px 5px 15px;
+	margin: 10px;
 }
 
 .offer img {
@@ -184,6 +185,7 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+	margin: 0 20px;
 }
 
 .social_media {
@@ -192,12 +194,16 @@ footer .container {
 }
 
 .social_media li {
-    display: inline;
+    display: block;
     margin-right: 10px;
+	text-align: left;
+	line-height: 25px;
+	letter-spacing: 1px;
 }
 
 .social_media li a{
 	color: #ffffff;
+	text-decoration: none;
 }
 
 .social_media li:last-child {
@@ -273,5 +279,15 @@ footer p {
 @media screen and (max-width: 800px){
 	#menu{
 		height: 6vh;
+	}
+
+	footer .container {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 0px;
+	}
+
+	.offer {
+		flex-basis: 40%;
 	}
 }
