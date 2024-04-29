@@ -11,6 +11,7 @@ body{
 	overflow-x: hidden;
 }
 
+/* start of navbar section css */
 #menu {
 	background: #333;
 	height: 10vh;
@@ -21,11 +22,13 @@ body{
 	z-index: 1;
 	box-shadow: #282a29a1 0px 1px,#282a2991 0px 2px;
 } 
+
 #logo_container{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
+
 #logo{
     font-family: "Pacifico", cursive;
   	font-weight: 400;
@@ -34,22 +37,27 @@ body{
     color: #FFFFFF;
     padding: 20px;
 }
+
 #img_logo{
 	width: 6%;
 }
+
 #menu ul, #menu li {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none
 }
+
 #menu ul {
 	width: 100%;
 	text-align: left;
 }
+
 #menu li {
 	display: inline-block;
 	position: relative;
 }
+
 #menu a {
 	display: block;
 	line-height: 45px;
@@ -58,15 +66,18 @@ body{
 	color: #ffffffe7;
 	font-size: 16px;
 }
+
 #menu a.dropdown-arrow:after {
 	content: "\25BE";
 	margin-left: 5px;
 }
+
 #menu li a:hover {
 	color: #282A29;
 	background: #FFFFFF;
 	opacity: 0.98;
 }
+
 #menu input {
 	display: none;
 	margin: 0;
@@ -76,6 +87,7 @@ body{
 	opacity: 0;
 	cursor: pointer;
 }
+
 #menu label {
 	display: none;
 	line-height: 45px;
@@ -83,12 +95,14 @@ body{
 	position: absolute;
 	left: 35px;
 }
+
 #menu label:before {
 	font-size: 1.6em;
 	color: #FFFFFF;
 	content: "\2261"; 
 	margin-left: 20px;
 }
+
 #menu ul.sub-menus{
 	height: auto;
 	overflow: hidden;
@@ -98,28 +112,36 @@ body{
 	z-index: 99;
 	display: none;
 }
+
 #menu ul.sub-menus li {
 	display: block;
 	text-align: left;
 	width: 100%;
 }
+
 #menu ul.sub-menus a {
 	color: #ffffffe7;
 	font-size: 16px;
 }
+
 #menu li:hover ul.sub-menus {
 	display: block
 }
+
 #menu ul.sub-menus a:hover{
 	color: #282A29;
 	background: #FFFFFF;
 	opacity: 0.98;
 	border: 1px solid #282A29;
 }
+/* end of navbar section css */
+
+/* start of video background section css */
 #video_container{
 	width: 100%;
 	height: 100vh;
 }
+
 #video-background {
 	position: absolute;
 	top: 0;
@@ -140,6 +162,7 @@ body{
 	color: white;
 	text-align: center;
 }
+
 .learn_more_btn {
 	background-color: transparent;
 	border: 1.5px solid #ffffff;
@@ -150,12 +173,15 @@ body{
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 	outline: none;
-  }
+}
+
   .learn_more_btn:hover {
 	background-color: #ffffffd5;
 	color: #000000;
-  }
+}
+/* end of video background section css */
 
+/* start of special offer section css */
 .special_offers_container {
 	width: 100%;
     display: flex;
@@ -166,11 +192,24 @@ body{
 .offer {
     flex-basis: 30%;
     text-align: center;
-	background-color: #ffffff;
+	background-color: #fffffff5;
 	box-shadow: #595c5a9d 0px 5px 15px;
 	margin: 10px;
 	padding: 5px;
 	border-radius: 5px;
+	border: 1px solid;
+	letter-spacing: normal;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	font-family: "Roboto", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+.offer:hover{
+	background-color: #3333334d;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	opacity: 0.9;
 }
 
 .offer img {
@@ -180,11 +219,12 @@ body{
 	border-radius: 5px;
 }
 
-.offer h2 {
-    margin-top: 20px;
+.offer h3 {
+    margin-top: 0px;
 }
+/* end of special offer section css */
 
-/* Footer styles */
+/*  start of footer section css */
 footer {
     background-color: #333;
     color: #fff;
@@ -230,6 +270,9 @@ footer .container {
 footer p {
     font-size: 14px;
 }
+/*  end of footer section css */
+
+/* css responsive code */
 @media screen and (max-width: 1100px){
 	#menu {
 		position: relative;
@@ -301,4 +344,42 @@ footer p {
 	.offer {
 		flex-basis: 40%;
 	}
+
+	.buy_button {
+		width: 4rem;
+		padding: 0.2rem ;
+		font-size: small;
+	}
+
+	h1{
+        font-size:3.5vw
+    }
+    h2{
+        font-size:3.25vw
+    }
+    h3{
+        font-size:3vw
+    }
+    h4{
+        font-size:2.75vw
+    }
+    h5{
+        font-size:2.5vw;
+    }
+    h6{
+        font-size:2vw
+    }
+    p{
+        font-size:2vw;
+    }
+    a{
+        font-size: medium;
+    }
+    li{
+        font-size: medium;
+    }
+    span{
+        font-size: 3.5vw;
+    }
 }
+/* css responsive code */
