@@ -186,7 +186,8 @@ body{
 	width: 100%;
     display: flex;
     flex-wrap: wrap;
-	margin: 20px;
+	justify-content: center;
+	margin: 5vh 0;
 }
 
 .offer {
@@ -225,6 +226,11 @@ body{
 /* end of special offer section css */
 
 /*  start of footer section css */
+.container{
+	animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -335,20 +341,14 @@ footer p {
 		height: 6vh;
 	}
 
+	.offer {
+		flex-basis: 45%;
+	}
+
 	footer .container {
 		flex-direction: column;
 		align-items: center;
-		margin: 0 0px;
-	}
-
-	.offer {
-		flex-basis: 40%;
-	}
-
-	.buy_button {
-		width: 4rem;
-		padding: 0.2rem ;
-		font-size: small;
+		margin: 0;
 	}
 
 	h1{
@@ -383,3 +383,8 @@ footer p {
     }
 }
 /* css responsive code */
+
+@keyframes fadeIn{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}

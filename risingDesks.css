@@ -1,0 +1,98 @@
+.rising_desk_container {
+    margin: 10vh 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.desk {
+    width: 90%;
+    background-color: #fffffff5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.desk img {
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    
+}
+
+.img1{
+    margin-right: 2%;
+    float: left;
+    position: relative;
+    animation-name: moving;
+    animation-duration: 2s;
+}
+
+.img2{
+    margin-left: 2%;
+    float: right;
+    position: relative;
+    animation-name: moving2;
+    animation-duration: 2s;
+}
+
+.desk h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.desk p {
+    color: #666;
+}
+
+.desk_body_right{
+    position: relative;
+    animation-name: text_moving;
+    animation-duration: 2s;
+}
+
+.desk_body_left{
+    position: relative;
+    animation-name: text_moving2;
+    animation-duration: 2s;
+}
+
+@keyframes text_moving{
+    0%{left: 100%;}
+    100%{left: 0%;}
+}
+
+@keyframes text_moving2{
+    0%{right: 100%;}
+    100%{right: 0%;}
+}
+
+@keyframes moving{
+    0%{right: 100%;}
+    100%{right: 0%;}
+}
+
+@keyframes moving2{
+    0%{left: 100%;}
+    100%{left: 0%;}
+}
+
+@media screen and (max-width: 800px){
+    .desk {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .desk img{
+        width: 45%;
+    }
+}
