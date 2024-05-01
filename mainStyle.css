@@ -17,7 +17,7 @@ body{
 	height: 10vh;
 	width: 100%;
 	padding-left: 18px;
-	position: fixed;
+	position:fixed;
   	top: 0;
 	z-index: 1;
 	box-shadow: #282a29a1 0px 1px,#282a2991 0px 2px;
@@ -38,9 +38,6 @@ body{
     padding: 20px;
 }
 
-#img_logo{
-	width: 6%;
-}
 
 #menu ul, #menu li {
 	margin: 0 auto;
@@ -67,6 +64,21 @@ body{
 	font-size: 16px;
 }
 
+#search_box{
+	padding: 5px 10px;
+	border-radius: 12px;
+	border: none;
+	margin: 10px;
+	font-size: 13px;
+}
+
+.fa-cart-shopping, .fa-magnifying-glass{
+	font-size: large;
+	color: #ffffffe7;
+	margin: 10px;
+	cursor: pointer;
+}
+
 #menu a.dropdown-arrow:after {
 	content: "\25BE";
 	margin-left: 5px;
@@ -78,7 +90,7 @@ body{
 	opacity: 0.98;
 }
 
-#menu input {
+#responsive-menu {
 	display: none;
 	margin: 0;
 	padding: 0;
@@ -193,7 +205,7 @@ body{
 .offer {
     flex-basis: 30%;
     text-align: center;
-	background-color: #fffffff5;
+	background-color: #fff;
 	box-shadow: #595c5a9d 0px 5px 15px;
 	margin: 10px;
 	padding: 5px;
@@ -278,6 +290,42 @@ footer p {
 }
 /*  end of footer section css */
 
+ /* start of modal popup css*/
+ .modal {
+	display: none; 
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+	font-family: "Pacifico", cursive;
+  	font-weight: 400;
+	font-size: large;
+	background-color: #fefefef6;
+	margin: 10% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 8px;
+	width: 80%;
+  }
+
+  .close:hover{
+	cursor: pointer;
+	color: #888;
+  }
+
+  .hello{
+	text-align: center;
+  }
+/* start of modal popup css*/
+
+
 /* css responsive code */
 @media screen and (max-width: 1100px){
 	#menu {
@@ -312,26 +360,26 @@ footer p {
 		width:auto;
 	}
 
-	#menu input, #menu label {
+	#responsive-menu, #menu label {
 		position:absolute;
 		top:0;
 		left:0;
 		display:block
 	}
 
-	#menu input {
+	#responsive-menu {
 		z-index:4
 	}
 
-	#menu input:checked + label {
+	#responsive-menu:checked + label {
 		color:#FFFFFF
 	}
 
-	#menu input:checked + label:before {
+	#responsive-menu:checked + label:before {
 		content:"\00d7"
 	}
 
-	#menu input:checked ~ ul {
+	#responsive-menu:checked ~ ul {
 		display:block
 	}
 }

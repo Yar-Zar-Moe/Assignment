@@ -1,5 +1,5 @@
 .health_benefit_container{
-    margin: 10vh 0;
+    margin: 15vh 0;
     padding: 20px;
     width: 100%;
     display: flex;
@@ -12,7 +12,7 @@
 
 .benefit {
     width: 90%;
-    background-color: #fff;
+    background-color: #fffffff5;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -27,7 +27,7 @@
     margin: 20px;
 }
 
-.benefit img{
+.benefit img, .benefit video{
     width: 40%;
     height: auto;
     border-radius: 5px;
@@ -87,4 +87,19 @@
 @keyframes text_moving2{
     0%{right: 100%;}
     100%{right: 0%;}
+}
+
+@media screen and (max-width: 800px){
+    .health_benefit_container {
+        margin: 10vh 0;
+    }
+
+    .benefit {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .benefit img, .benefit video{
+        width: 50%;
+    }
 }
