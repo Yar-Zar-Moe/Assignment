@@ -54,12 +54,14 @@
 }
 
 .desk_body_right{
+    text-align: center;
     position: relative;
     animation-name: text_moving;
     animation-duration: 2s;
 }
 
 .desk_body_left{
+    text-align: center;
     position: relative;
     animation-name: text_moving2;
     animation-duration: 2s;
