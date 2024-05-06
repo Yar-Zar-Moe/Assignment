@@ -17,28 +17,41 @@
 
   <header>
   <!-- start of nav-bar -->
-    <nav id="menu">
-        <input type="checkbox" id="responsive-menu"><label></label>
-        <ul>
-          <li>
-            <div id="logo_container"><span id="logo">Standing Desk</span><img id="img_logo" src="img/web_logo.jpg" alt="">
-            </div>
-          </li>
-          <li><a href="homePage.html">Home</a></li>
-          <li><a class="dropdown-arrow" href="#">Products</a>
-            <ul class="sub-menus">
-              <li><a href="#">Standing Desks</a></li>
-              <li><a href="#">Desk Converters</a></li>
-              <li><a href="#">Accessories</a></li>
-            </ul>
-          </li>
-          <li><a href="risingDesks.html">Rising Desks</a></li>
-          <li><a href="healthBenefits.html">Health Benefits</a></li>
-          <li><a href="contactUs.html">Contact Us</a></li>
-          <li><input id="search_box" type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li><i class="fa-solid fa-cart-shopping"></i></li>
+  <nav id="menu">
+    <input type="checkbox" id="responsive-menu"><label></label>
+    <ul>
+      <li>
+        <div id="logo_container"><span id="logo">Standing Desk</span><img id="img_logo" src="img/web_logo.jpg" alt="">
+        </div>
+      </li>
+      <li><a href="homePage.html">Home</a></li>
+      <li><a class="dropdown-arrow" href="#">Products</a>
+        <ul class="sub-menus">
+          <li><a href="ergonomicChairs.html">Ergonomic Chairs</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
         </ul>
-      </nav>
+      </li>
+      <li><a href="risingDesks.html">Rising Desks</a></li>
+      <li><a href="healthBenefits.html">Health Benefits</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+      <li>
+        <input id="search_box" type="text" placeholder="Search...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div id="search_container">
+         
+        </div>
+      </li>
+      <li>
+        <div class="icon-container">
+          <a href="shoppingCart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="badge" class="badge">1</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
   <!-- end of nav-bar -->
   </header>
 
@@ -68,7 +81,7 @@
             <hr>
             <h3>Ergonomic Desk Bundle</h3>
             <p>Upgrade your workspace with our Ergonomic Desk Bundle! This exclusive offer includes a height-adjustable standing desk, ergonomic chair, and desk accessories to optimize your comfort and productivity.</p>
-            <button class="buy_btn">Buy</button>
+            <button class="buy_btn" id="buy_btn1">Buy</button>
           </div>
 
           <div class="offer">
@@ -76,7 +89,7 @@
             <hr>
             <h3>Compact Standing Desk</h3>
             <p>Transform any corner of your home or office into a standing workstation with our Compact Standing Desk! This space-saving solution offers the health benefits of standing while fitting seamlessly into small spaces.</p>
-            <button class="buy_btn">Buy</button>
+            <button class="buy_btn" id="buy_btn2">Buy</button>
           </div>
 
           <div class="offer">
@@ -84,7 +97,7 @@
             <hr>
             <h3>Dual-Monitor Standing Desk Converter</h3>
             <p>Upgrade your existing desk into a standing workstation with our Dual-Monitor Standing Desk Converter! This innovative solution allows you to switch between sitting and standing positions effortlessly, promoting a healthier work lifestyle.</p>
-            <button class="buy_btn">Buy</button>
+            <button class="buy_btn" id="buy_btn3">Buy</button>
           </div>
 
           <div class="offer">
@@ -92,7 +105,7 @@
             <hr>
             <h3>Electric Height-Adjustable Desk</h3>
             <p> This innovative workstation empowers you to effortlessly switch between sitting and standing positions throughout your workday, promoting better posture, increased energy levels, and enhanced productivity</p>
-            <button class="buy_btn">Buy</button>
+            <button class="buy_btn" id="buy_btn4">Buy</button>
           </div>
 
           <div class="offer">
@@ -100,7 +113,7 @@
             <hr>
             <h3>Standing Desk Mat</h3>
             <p>Enhance your standing desk experience with our Standing Desk Mat. Designed with ergonomics in mind, this mat provides cushioned support to reduce fatigue and discomfort during prolonged standing sessions.</p>
-            <button class="buy_btn">Buy</button>
+            <button class="buy_btn" id="buy_btn5">Buy</button>
           </div>
 
           <div class="offer">
@@ -108,7 +121,7 @@
             <hr>
             <h3>Adjustable Standing Desk</h3>
             <p>Transform your workspace with our Adjustable Standing Desk. This versatile desk allows you to seamlessly transition between sitting and standing positions, promoting a healthier and more dynamic work environment.</p>
-            <button class="buy_btn">Buy</button>
+            <button class="buy_btn" id="buy_btn6">Buy</button>
           </div>
 
         </div>
@@ -140,5 +153,6 @@
     </div>
   
 <script src="script.js"></script>
+<script src="modal.js"></script>
 </body>
 </html>

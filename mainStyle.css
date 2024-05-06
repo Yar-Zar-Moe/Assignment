@@ -73,11 +73,62 @@ body{
 	font-size: 13px;
 }
 
+#search_container{
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	padding: 1%;
+	position: absolute;
+	display: none;
+}
+
+.search_item{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #666;
+	padding: 1%;
+    border-radius: 2px;
+	width: 100%;
+}
+
+.search_item img{
+	width: 3rem;
+	object-fit: cover;
+}
+
+.vr_line{
+    margin-left: 10px;
+    background-color: #666;
+    padding: 1px;
+}
+
+.search_item h5{
+    margin-left: 1%;
+    width: 70%;
+}
+
 .fa-cart-shopping, .fa-magnifying-glass{
 	font-size: large;
 	color: #ffffffe7;
 	margin: 10px;
 	cursor: pointer;
+}
+
+.badge {
+    position: relative;
+    top: -5px;
+    right: 20px;
+    background-color: red; /* Change the background color as needed */
+    color: white; /* Change the text color as needed */
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+}
+
+.icon-container:hover{
+    .fa-cart-shopping{
+        color: #000;
+    }
 }
 
 #menu a.dropdown-arrow:after {
@@ -375,7 +426,11 @@ footer p {
 
 
 /* css responsive code */
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1150px){
+	#search_container{
+		position: relative;
+	}
+	
 	#menu {
 		position: relative;
 		height: 7.5vh;
@@ -450,7 +505,7 @@ footer p {
 	.buy_btn{
 		padding: 0.2rem 0.6rem;
 		font-weight: 400;
-		width: 4rem;
+		width: 5.5rem;
 	}
 
 	h1{
