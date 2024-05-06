@@ -57,7 +57,7 @@ let itemsArray = [
     src: "img/Standing Desk Chair.jpg"
   },{
     btnID : "buy_btn15",
-    name: "Ergonomic Desk Bundle",
+    name: "Monitor Arm",
     src: "img/Monitor Arm.jpg"
   },{
     btnID : "buy_btn16",
@@ -74,6 +74,7 @@ let itemsArray = [
   }
 ]
 
+// start of search bar
 let searchBox = document.getElementById("search_box");
 let searchContainer = document.getElementById("search_container");
 searchContainer.innerHTML = "";
@@ -105,50 +106,49 @@ searchBox.addEventListener("keyup" , (event) =>{
       }
   
 });
+//end of searh bar
 
-document.addEventListener("DOMContentLoaded", function() {
-  var storedArray = JSON.parse(localStorage.getItem('clickedBtn'));
-  if (storedArray) {
-      console.log("Stored Array:", storedArray);
-  } else {
-      console.log("No array stored.");
-  }
+//start of shopping cart
+let buttons = document.querySelectorAll(".buy_btn");
+let buyItemContainer = document.getElementById("buy_item_container");
+let cartIcon = document.querySelector(".icon-container");
+let hello = document.querySelector(".hello");
+let itemCount = document.querySelector("#badge");
+let buyModel = document.getElementById("buyModel");
+var closeBtn = document.getElementsByClassName("close")[1];
+let count = 0;
+
+buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        let buttonId = this.id;
+        count++;
+        itemCount.innerHTML = count;
+
+        for(let i=0;i<itemsArray.length;i++){
+          if(itemsArray[i].btnID == buttonId){
+            buyItemContainer.innerHTML += `
+            <div class="buy_item">
+              <img src="${itemsArray[i].src}" alt="">
+              <div class="vr_line"></div>
+              <h3>${itemsArray[i].name}</h3>
+              <div class="vr_line"></div>
+              <i class="fa-solid fa-trash"></i>
+            </div>
+            `
+          }
+        }
+    });
 });
 
-let buyButtons = document.querySelectorAll(".buy_btn");
-let buyItemContainer = document.getElementById("buy_item_container");
-let container = document.querySelector(".container");
-const clickedBtn = [];
-
-buyButtons.forEach(function(btn){
-  btn.addEventListener("click", function(event) {
-  if (event.target && event.target.classList.contains("buy_btn")) {
-      var buttonId = event.target.id;
-
-      console.log("Button clicked with id: " + buttonId);
-
-      clickedBtn.push(buttonId);
-      
-      localStorage.setItem('clickedBtn', JSON.stringify(clickedBtn));
-      // for (let i = 0; i < itemsArray.length; i++) {
-      //     if (buttonId === itemsArray[i].btnID) {
-      //         let buyItem = `
-      //         <div class="buy_item">
-      //             <img src="${itemsArray[i].src}" alt="">
-      //             <div class="vr_line"></div>
-      //             <h3>${itemsArray[i].h3}</h3>
-      //             <div class="vr_line"></div>
-      //             <i class="fa-solid fa-trash"></i>
-      //         </div>
-      //         `;
-      //         buyItemContainer.append(buyItem);
-      //     }
-      // }
+cartIcon.onclick = function() {
+  if(count == 0){
+    buyItemContainer.innerHTML = "There is no buy item."
   }
-})});
+  buyModel.style.display = "block";
+}
 
-localStorage.setItem('clickedBtn', JSON.stringify(clickedBtn));
-
-var storedArray = JSON.parse(localStorage.getItem('clickedBtn'));
-
-console.log(storedArray);
+closeBtn.onclick = function() {
+  buyModel.style.display = "none";
+  console.log("click")
+}
+//end of shopping cart
