@@ -329,15 +329,11 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+	transition: transform 0.5s ease;
 }
 
 .offer:hover{
-	background-color: #3333334d;
-	color: #FFFFFF;
-	border: 1px solid #FFFFFF;
-	opacity: 0.9;
-	transition: ease-in-out 0.2s;
-	box-shadow: rgba(207, 206, 206, 0.32) 0px 3px 8px, rgba(207, 206, 206, 0.28) 0px 4px 9px, rgba(207, 206, 206, 0.24) 0px 5px 11px;
+	transform: translate(-5px, -5px);
 }
 
 .offer img {
@@ -365,27 +361,18 @@ hr{
 	font-size: 0.9rem;
     font-weight: 600;
 	cursor: pointer;
-	transition: background-color 0.2s ease;
+	transition: background-color 0.5s ease-in-out;
 }
 
 .buy_btn:hover {
-    color: #212529;
-    background-color: #FFFFFF;
-    border-color: #fffffff1;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
 }
 
 .buy_btn:focus,
 .buy_btn.focus {
-    box-shadow: 0 0 0 0.2rem rgba(231, 234, 238, 0.5);
-}
-
-.offer:hover{
-    .buy_btn{
-        color: #333333;
-        background-color: #f5f5dc;
-        border-color: #f5f5dc; 
-    }
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 /* end of special offer section css */
 

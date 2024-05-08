@@ -21,6 +21,11 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover{
+    transform: translate(-5px,-5px);
 }
 
 .benefit_body{
