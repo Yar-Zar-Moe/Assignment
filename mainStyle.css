@@ -303,6 +303,12 @@ body{
 /* end of video background section css */
 
 /* start of special offer section css */
+.section_header{
+	font-weight: 600;
+    color: #FFFFFF;
+	text-align: center;
+}
+
 .special_offers_container {
 	width: 100%;
     display: flex;

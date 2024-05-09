@@ -1,170 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Standing Desk Company</title>
-    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="mainStyle.css" />
     <!-- google font import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="img/web_logo.jpg">
-</head>
-<body>
-
-  <header>
-  <!-- start of nav-bar -->
-  <nav id="menu">
-    <input type="checkbox" id="responsive-menu"><label></label>
-    <ul>
-      <li>
-        <div id="logo_container"><span id="logo">Standing Desk</span><img id="img_logo" src="img/web_logo.jpg" alt="">
-        </div>
-      </li>
-      <li><a href="homePage.html">Home</a></li>
-      <li><a class="dropdown-arrow" href="#">Products</a>
-        <ul class="sub-menus">
-          <li><a href="ergonomicChairs.html">Ergonomic Chairs</a></li>
-          <li><a href="accessories.html">Accessories</a></li>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="img/web_logo.jpg" />
+  </head>
+  <body>
+    <header>
+      <!-- start of nav-bar -->
+      <nav id="menu">
+        <input type="checkbox" id="responsive-menu" /><label></label>
+        <ul>
+          <li>
+            <div id="logo_container">
+              <span id="logo">Standing Desk</span
+              ><img id="img_logo" src="img/web_logo.jpg" alt="" />
+            </div>
+          </li>
+          <li><a href="homePage.html">Home</a></li>
+          <li>
+            <a class="dropdown-arrow" href="#">Products</a>
+            <ul class="sub-menus">
+              <li><a href="ergonomicChairs.html">Ergonomic Chairs</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </li>
+          <li><a href="risingDesks.html">Rising Desks</a></li>
+          <li><a href="healthBenefits.html">Health Benefits</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li>
+            <input id="search_box" type="text" placeholder="Search..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div id="search_container"></div>
+          </li>
+          <li>
+            <div class="icon-container">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="badge" class="badge">0</span>
+              </a>
+            </div>
+          </li>
         </ul>
-      </li>
-      <li><a href="risingDesks.html">Rising Desks</a></li>
-      <li><a href="healthBenefits.html">Health Benefits</a></li>
-      <li><a href="contactUs.html">Contact Us</a></li>
-      <li>
-        <input id="search_box" type="text" placeholder="Search...">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <div id="search_container">
-         
+      </nav>
+
+      <!-- end of nav-bar -->
+    </header>
+
+    <div class="container">
+      <!-- start of Video Background section-->
+      <section>
+        <div id="video_container">
+          <video autoplay muted loop id="video-background">
+            <source src="video/Background_Video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="content">
+            <h1>Experience the Benefits of Standing Desks!</h1>
+            <a href="healthBenefits.html"
+              ><button class="learn_more_btn">Learn More</button></a
+            >
+          </div>
         </div>
-      </li>
-      <li>
-        <div class="icon-container">
-          <a href="#">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span id="badge" class="badge">0</span>
-          </a>
+      </section>
+      <!-- end of Video Background section-->
+
+      <!-- start of special offer section -->
+      <hr />
+      <h2 class="section_header">Special Offers</h2>
+      <hr />
+      <div class="special_offers_container">
+        <div class="offer">
+          <img src="img/Ergonomic Desk Bundle.jpg" alt="Special Offer 1" />
+          <hr />
+          <h3>Ergonomic Desk Bundle</h3>
+          <p>
+            Upgrade your workspace with our Ergonomic Desk Bundle! This
+            exclusive offer includes a height-adjustable standing desk,
+            ergonomic chair, and desk accessories to optimize your comfort and
+            productivity.
+          </p>
+          <button class="buy_btn" id="buy_btn1">Buy</button>
         </div>
-      </li>
-    </ul>
-  </nav>
 
-  <!-- end of nav-bar -->
-  </header>
-
-      <div class="container">
-
-        <!-- start of Video Background section-->
-        <section>
-          <div id="video_container">
-                <video autoplay muted loop id="video-background">
-                  <source src="video/Background_Video.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-
-                <div class="content">
-                  <h1>Experience the Benefits of Standing Desks!</h1>
-                  <a href="healthBenefits.html"><button class="learn_more_btn">Learn More</button></a>
-                </div>
-          </div>
-        </section>
-        <!-- end of Video Background section-->
-
-        <!-- start of special offer section -->
-        <div class="special_offers_container">
-
-          <div class="offer">
-            <img src="img/Ergonomic Desk Bundle.jpg" alt="Special Offer 1">
-            <hr>
-            <h3>Ergonomic Desk Bundle</h3>
-            <p>Upgrade your workspace with our Ergonomic Desk Bundle! This exclusive offer includes a height-adjustable standing desk, ergonomic chair, and desk accessories to optimize your comfort and productivity.</p>
-            <button class="buy_btn" id="buy_btn1">Buy</button>
-          </div>
-
-          <div class="offer">
-            <img src="img/Compact Standing Desk.jpg" alt="Special Offer 2">
-            <hr>
-            <h3>Compact Standing Desk</h3>
-            <p>Transform any corner of your home or office into a standing workstation with our Compact Standing Desk! This space-saving solution offers the health benefits of standing while fitting seamlessly into small spaces.</p>
-            <button class="buy_btn" id="buy_btn2">Buy</button>
-          </div>
-
-          <div class="offer">
-            <img src="img/Dual-Monitor Standing Desk Converter.jpg" alt="Special Offer 3">
-            <hr>
-            <h3>Dual-Monitor Standing Desk Converter</h3>
-            <p>Upgrade your existing desk into a standing workstation with our Dual-Monitor Standing Desk Converter! This innovative solution allows you to switch between sitting and standing positions effortlessly, promoting a healthier work lifestyle.</p>
-            <button class="buy_btn" id="buy_btn3">Buy</button>
-          </div>
-
-          <div class="offer">
-            <img src="img/Electric Height-Adjustable Desk.jpg" alt="Special Offer 4">
-            <hr>
-            <h3>Electric Height-Adjustable Desk</h3>
-            <p> This innovative workstation empowers you to effortlessly switch between sitting and standing positions throughout your workday, promoting better posture, increased energy levels, and enhanced productivity</p>
-            <button class="buy_btn" id="buy_btn4">Buy</button>
-          </div>
-
-          <div class="offer">
-            <img src="img/Standing Desk Mat.jpg" alt="Special Offer 5">
-            <hr>
-            <h3>Standing Desk Mat</h3>
-            <p>Enhance your standing desk experience with our Standing Desk Mat. Designed with ergonomics in mind, this mat provides cushioned support to reduce fatigue and discomfort during prolonged standing sessions.</p>
-            <button class="buy_btn" id="buy_btn5">Buy</button>
-          </div>
-
-          <div class="offer">
-            <img src="img/Adjustable Standing Desk.jpg" alt="Special Offer 6">
-            <hr>
-            <h3>Adjustable Standing Desk</h3>
-            <p>Transform your workspace with our Adjustable Standing Desk. This versatile desk allows you to seamlessly transition between sitting and standing positions, promoting a healthier and more dynamic work environment.</p>
-            <button class="buy_btn" id="buy_btn6">Buy</button>
-          </div>
-
+        <div class="offer">
+          <img src="img/Compact Standing Desk.jpg" alt="Special Offer 2" />
+          <hr />
+          <h3>Compact Standing Desk</h3>
+          <p>
+            Transform any corner of your home or office into a standing
+            workstation with our Compact Standing Desk! This space-saving
+            solution offers the health benefits of standing while fitting
+            seamlessly into small spaces.
+          </p>
+          <button class="buy_btn" id="buy_btn2">Buy</button>
         </div>
-        <!-- end of special offer section -->
+
+        <div class="offer">
+          <img
+            src="img/Dual-Monitor Standing Desk Converter.jpg"
+            alt="Special Offer 3"
+          />
+          <hr />
+          <h3>Dual-Monitor Standing Desk Converter</h3>
+          <p>
+            Upgrade your existing desk into a standing workstation with our
+            Dual-Monitor Standing Desk Converter! This innovative solution
+            allows you to switch between sitting and standing positions
+            effortlessly, promoting a healthier work lifestyle.
+          </p>
+          <button class="buy_btn" id="buy_btn3">Buy</button>
+        </div>
+
+        <div class="offer">
+          <img
+            src="img/Electric Height-Adjustable Desk.jpg"
+            alt="Special Offer 4"
+          />
+          <hr />
+          <h3>Electric Height-Adjustable Desk</h3>
+          <p>
+            This innovative workstation empowers you to effortlessly switch
+            between sitting and standing positions throughout your workday,
+            promoting better posture, increased energy levels, and enhanced
+            productivity
+          </p>
+          <button class="buy_btn" id="buy_btn4">Buy</button>
+        </div>
+
+        <div class="offer">
+          <img src="img/Standing Desk Mat.jpg" alt="Special Offer 5" />
+          <hr />
+          <h3>Standing Desk Mat</h3>
+          <p>
+            Enhance your standing desk experience with our Standing Desk Mat.
+            Designed with ergonomics in mind, this mat provides cushioned
+            support to reduce fatigue and discomfort during prolonged standing
+            sessions.
+          </p>
+          <button class="buy_btn" id="buy_btn5">Buy</button>
+        </div>
+
+        <div class="offer">
+          <img src="img/Adjustable Standing Desk.jpg" alt="Special Offer 6" />
+          <hr />
+          <h3>Adjustable Standing Desk</h3>
+          <p>
+            Transform your workspace with our Adjustable Standing Desk. This
+            versatile desk allows you to seamlessly transition between sitting
+            and standing positions, promoting a healthier and more dynamic work
+            environment.
+          </p>
+          <button class="buy_btn" id="buy_btn6">Buy</button>
+        </div>
       </div>
+      <!-- end of special offer section -->
+    </div>
 
-
-  <!-- start of footer Section -->
-  <footer>
+    <!-- start of footer Section -->
+    <footer>
       <div class="container">
-          <ul class="social_media">
-              <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-              <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-          </ul>
-          <p>&copy; 2024 The Standing Desk Company. All rights reserved.</p>
+        <ul class="social_media">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </li>
+        </ul>
+        <p>&copy; 2024 The Standing Desk Company. All rights reserved.</p>
       </div>
-  </footer>
-  <!-- end of footer Section --> 
-  
+    </footer>
+    <!-- end of footer Section -->
+
     <!-- start of Modal pop up-->
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close"><i class="fa-solid fa-xmark"></i></span>
         <p class="hello">Hello! Welcome to our standing desk website.</p>
-
       </div>
     </div>
     <!-- end of Modal pop up-->
-    
+
     <!-- start of  buy model -->
     <div id="buyModel" class="modal">
       <div class="modal-content">
         <span class="close"><i class="fa-solid fa-xmark"></i></span>
         <p class="hello">Your buy items.</p>
-        <div class="buy_item_container" id="buy_item_container">
-          
-        </div>
+        <div class="buy_item_container" id="buy_item_container"></div>
       </div>
     </div>
     <!-- end of  buy model -->
-  
-<script src="script.js"></script>
-<script src="modal.js"></script>
-</body>
+
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+  </body>
 </html>
