@@ -64,7 +64,6 @@ body{
 	font-size: 16px;
 }
 
-/* start of search bar css */
 #search_box{
 	padding: 5px 10px;
 	border-radius: 12px;
@@ -72,40 +71,6 @@ body{
 	margin-left: 15px;
 	font-size: 13px;
 }
-
-#search_container{
-	width: 100%;
-	background-color: #FFFFFF;
-	border-radius: 3px;
-	padding: 1%;
-	position: absolute;
-	display: none;
-}
-
-.search_item{
-    display: flex;
-    flex-direction: row;
-    border: 2px solid #666;
-	padding: 1%;
-    border-radius: 2px;
-	width: 100%;
-}
-
-.search_item:hover{
-	opacity: 0.9;
-	cursor: pointer;
-}
-
-.search_item img{
-	width: 3rem;
-	object-fit: cover;
-}
-
-.search_item h5{
-    margin-left: 1%;
-    width: 70%;
-}
-/* end of search bar css */
 
 .fa-cart-shopping, .fa-magnifying-glass{
 	font-size: large;
@@ -124,57 +89,6 @@ body{
     border-radius: 50%;
     padding: 2px 6px;
     font-size: 0.8em;
-}
-
-.buy_item_container{
-    background-color: #fff;
-    width: 100%;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-	justify-content: center;
-	align-items: center;
-    padding: 1%;
-}
-
-.buy_item_container h2{
-    margin-left: 10px;
-}
-
-.buy_item{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #666;
-    padding: 1%;
-    border-radius: 5px;
-    margin-bottom: 1%;
-}
-
-.buy_item img{
-    width: 15%;
-    border-radius: 5px;
-    margin-left: 1%;
-}
-
-.vr_line{
-    margin-left: 10px;
-    background-color: #666;
-    padding: 1px;
-}
-
-.buy_item h3{
-    margin-left: 1%;
-    width: 70%;
-}
-
-.fa-trash{
-    align-self: center;
-    margin: 0 auto;
-}
-
-.fa-trash:hover{
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.7);
 }
 
 .icon-container:hover{
@@ -257,6 +171,11 @@ body{
 /* end of navbar section css */
 
 /* start of video background section css */
+.container{
+	animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
 #video_container{
 	width: 100%;
 	height: 100vh;
@@ -383,11 +302,6 @@ hr{
 /* end of special offer section css */
 
 /*  start of footer section css */
-.container{
-	animation-name: fadeIn;
-    animation-duration: 3s;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -470,44 +384,349 @@ footer p {
   #modalToggle:checked ~ .modal-overlay {
 	display: none;
   }
-
- .buyModel {
-	display: none; 
-	position: fixed;
-	z-index: 9999;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgba(0,0,0,0.4);
-  }
-
-  .modal-content {
-	background-color: #fefefef6;
-	margin: 10% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	border-radius: 8px;
-	width: 80%;
-  }
-
-  .modal-content .hello{
-	font-family: "Pacifico", cursive;
-  	font-weight: 400;
-	font-size: large;
-  }
-
-  #close:hover{
-	cursor: pointer;
-	color: #888;
-  }
-
-  .hello{
-	text-align: center;
-  }
 /* start of modal popup css*/
 
+/* start of rising desks css */
+.rising_desk_container {
+    margin: 15vh 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.desk {
+    width: 90%;
+    background-color: #fffffff5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.desk:hover{
+    transform: translate(-5px,-5px);
+}
+
+.desk img {
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.img1{
+    margin-right: 2%;
+    float: left;
+    position: relative;
+    animation-name: moving;
+    animation-duration: 2s;
+}
+
+.img2{
+    margin-left: 2%;
+    float: right;
+    position: relative;
+    animation-name: moving2;
+    animation-duration: 2s;
+}
+
+.desk h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.desk p {
+    color: #666;
+}
+
+.desk_body_right{
+    text-align: center;
+    position: relative;
+    animation-name: text_moving;
+    animation-duration: 2s;
+}
+
+.desk_body_left{
+    text-align: center;
+    position: relative;
+    animation-name: text_moving2;
+    animation-duration: 2s;
+}
+
+@keyframes text_moving{
+    0%{left: 100%;}
+    100%{left: 0%;}
+}
+
+@keyframes text_moving2{
+    0%{right: 100%;}
+    100%{right: 0%;}
+}
+
+@keyframes moving{
+    0%{right: 100%;}
+    100%{right: 0%;}
+}
+
+@keyframes moving2{
+    0%{left: 100%;}
+    100%{left: 0%;}
+}
+
+@media screen and (max-width: 800px){
+    .rising_desk_container {
+        margin: 10vh 0;
+    }
+
+    .desk {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .desk img{
+        width: 45%;
+    }
+}
+/* end of rising desks css */
+
+/* start of contact us css */
+.contact_us_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 15vh 0;
+  }
+
+.form_container {
+    border-radius: 5px;
+    background-color: #333;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    letter-spacing:0.5px;
+    padding: 20px;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.accordion {
+  background-color: #f9f9f9;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #282A29;
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  display: block;
+}
+
+.accordion-header:hover {
+  background-color: #ddd;
+}
+
+.accordion-panel {
+  padding: 0 20px;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#accordion1:checked ~ #accordion-panel-1 {
+  max-height: 10%; 
+}
+
+#accordion2:checked ~ #accordion-panel-2 {
+  max-height: 10%; 
+}
+
+#accordion3:checked ~ #accordion-panel-3 {
+  max-height: 10%; 
+}
+
+  @media screen and (max-width: 800px){
+    .contact_us_container {
+        margin: 10vh 0;
+    }
+
+    .form_container{
+        width: 90%;
+    }
+  }
+  
+form {
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 1.5px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffffd5;
+	  color: #000000;
+}
+/* end of contact us css */
+
+/* start of health benefits css */
+.health_benefit_container{
+    margin: 15vh 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.benefit {
+    width: 90%;
+    background-color: #fffffff5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover{
+    transform: translate(-5px,-5px);
+}
+
+.benefit_body{
+    margin: 20px;
+}
+
+.benefit img, .benefit video{
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.benefit h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #666;
+}
+
+.img1{
+    margin-left: 2%;
+    position: relative;
+    animation-name: moving;
+    animation-duration: 2s;
+}
+
+.img2{
+    margin-right: 2%;
+    position: relative;
+    animation-name: moving2;
+    animation-duration: 2s;
+}
+
+@keyframes moving{
+    0%{right: 100%;}
+    100%{right: 0%;}
+}
+
+@keyframes moving2{
+    0%{left: 100%;}
+    100%{left: 0%;}
+}
+
+.benefit_body_right{
+    position: relative;
+    animation-name: text_moving;
+    animation-duration: 2s;
+}
+
+.benefit_body_left{
+    position: relative;
+    animation-name: text_moving2;
+    animation-duration: 2s;
+}
+
+@keyframes text_moving{
+    0%{left: 100%;}
+    100%{left: 0%;}
+}
+
+@keyframes text_moving2{
+    0%{right: 100%;}
+    100%{right: 0%;}
+}
+
+@media screen and (max-width: 800px){
+    .health_benefit_container {
+        margin: 10vh 0;
+    }
+
+    .benefit {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .benefit img, .benefit video{
+        width: 50%;
+    }
+}
+/* end of health benefits css */
 
 /* css responsive code */
 @media screen and (max-width: 1150px){
@@ -625,6 +844,7 @@ footer p {
 }
 /* css responsive code */
 
+/* fade in animation */
 @keyframes fadeIn{
 	0%{opacity: 0;}
 	100%{opacity: 1;}
