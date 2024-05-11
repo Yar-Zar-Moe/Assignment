@@ -32,30 +32,35 @@
   padding: 10px 20px;
   cursor: pointer;
   border-bottom: 1px solid #ddd;
+  display: block;
 }
 
 .accordion-header:hover {
   background-color: #ddd;
 }
 
-.accordion-header::after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.accordion-header.active::after {
-  content: "\2212";
-}
-
 .accordion-panel {
   padding: 0 20px;
-  display: none;
   background-color: white;
   overflow: hidden;
-  border-bottom: 1px solid #ddd;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#accordion1:checked ~ #accordion-panel-1 {
+  max-height: 10%; 
+}
+
+#accordion2:checked ~ #accordion-panel-2 {
+  max-height: 10%; 
+}
+
+#accordion3:checked ~ #accordion-panel-3 {
+  max-height: 10%; 
 }
 
   @media screen and (max-width: 800px){
@@ -82,7 +87,7 @@ label {
     font-weight: bold;
 }
 
-form input {
+form input,textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;

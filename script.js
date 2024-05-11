@@ -115,7 +115,7 @@ let cartIcon = document.querySelector(".icon-container");
 let hello = document.querySelector(".hello");
 let itemCount = document.querySelector("#badge");
 let buyModel = document.getElementById("buyModel");
-var closeBtn = document.getElementsByClassName("close")[1];
+var closeBtn = document.getElementById("close");
 let count = 0;
 
 buttons.forEach(function(button) {
@@ -149,6 +149,5 @@ cartIcon.onclick = function() {
 
 closeBtn.onclick = function() {
   buyModel.style.display = "none";
-  console.log("click")
 }
 //end of shopping cart
