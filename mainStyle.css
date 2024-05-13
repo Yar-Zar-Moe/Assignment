@@ -88,13 +88,11 @@ body{
     color: white; /* Change the text color as needed */
     border-radius: 50%;
     padding: 2px 6px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
-.icon-container:hover{
-    .fa-cart-shopping{
-        color: #000;
-    }
+.icon-container:hover .fa-cart-shopping {
+    color: #000;
 }
 /* end of shopping cart css */
 
@@ -276,7 +274,7 @@ hr{
     margin-top: 0px;
 }
 
-.buy_btn{
+.buy_btn, .read_more_btn{
     color: #fff;
     background-color: #007bff;
     padding: 0.6rem 1.2rem;
@@ -295,8 +293,19 @@ hr{
     border-color: #0062cc;
 }
 
+.read_more_btn:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
 .buy_btn:focus,
 .buy_btn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.read_more_btn:focus,
+.read_more_btn.focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 /* end of special offer section css */
@@ -384,7 +393,7 @@ footer p {
   #modalToggle:checked ~ .modal-overlay {
 	display: none;
   }
-/* start of modal popup css*/
+/* end of modal popup css*/
 
 /* start of rising desks css */
 .rising_desk_container {
@@ -805,7 +814,7 @@ form input,textarea {
 		margin: 0;
 	}
 
-	.buy_btn{
+	.buy_btn, .read_more_btn{
 		padding: 0.2rem 0.6rem;
 		font-weight: 400;
 		width: 5.5rem;
